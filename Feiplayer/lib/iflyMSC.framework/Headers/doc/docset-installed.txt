@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/HHC/Library/Developer/Shared/Documentation/DocSets/com.iflytek.documentation.IFlyMSC.docset
+Time: 2014-04-14 02:43:41 +0000

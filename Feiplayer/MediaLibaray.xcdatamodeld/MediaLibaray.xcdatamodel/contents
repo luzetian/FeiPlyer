@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14A389" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Audio" representedClassName="MLAudio" syncable="YES">
+        <attribute name="enPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hkDwonload" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="hkPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hkUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zhDownload" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="zhPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zhUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="file" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="File" inverseName="audio" inverseEntity="File" syncable="YES"/>
+    </entity>
+    <entity name="File" representedClassName="MLFile" syncable="YES">
+        <attribute name="basePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="episode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="audio" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Audio" inverseName="file" inverseEntity="Audio" syncable="YES"/>
+        <relationship name="subtitle" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Subtitle" inverseName="file" inverseEntity="Subtitle" syncable="YES"/>
+        <relationship name="video" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Video" inverseName="file" inverseEntity="Video" syncable="YES"/>
+    </entity>
+    <entity name="Recorder" representedClassName="MLRecorder" syncable="YES">
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recorderPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subtitleStr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Subtitle" representedClassName="MLSubtitle" syncable="YES">
+        <attribute name="enUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hkUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zhUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="file" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="File" inverseName="subtitle" inverseEntity="File" syncable="YES"/>
+    </entity>
+    <entity name="SubtitleComparison" representedClassName="MLSubtitleComparison" syncable="YES">
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subtitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userSubtitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Video" representedClassName="MLVideo" syncable="YES">
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="file" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="File" inverseName="video" inverseEntity="File" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Audio" positionX="-54" positionY="-9" width="128" height="178"/>
+        <element name="File" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="Recorder" positionX="-45" positionY="54" width="128" height="118"/>
+        <element name="Subtitle" positionX="-18" positionY="27" width="128" height="103"/>
+        <element name="SubtitleComparison" positionX="-45" positionY="45" width="128" height="120"/>
+        <element name="Video" positionX="-36" positionY="9" width="128" height="88"/>
+    </elements>
+</model>

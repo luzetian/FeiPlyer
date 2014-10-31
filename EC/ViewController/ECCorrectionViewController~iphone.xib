@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ECCorrectionViewController">
+            <connections>
+                <outlet property="tableView" destination="5dk-YX-gaO" id="EuR-Ow-JiK"/>
+                <outlet property="testTextView" destination="eFm-y4-7Mq" id="ecL-rH-hZf"/>
+                <outlet property="view" destination="e75-hG-H9f" id="01j-bZ-5a3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="e75-hG-H9f">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOD-cD-JVO">
+                    <rect key="frame" x="226" y="314" width="94" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="6xL-Rc-qgx"/>
+                        <constraint firstAttribute="height" constant="22" id="KFr-0B-rLv"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="add_Answers">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addAnswer:" destination="-1" eventType="touchUpInside" id="7rr-vF-58y"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请认真收听音频中的新闻信息,结合下文,指出下文错误的信息填写到下面的文本框中" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="253" translatesAutoresizingMaskIntoConstraints="NO" id="czS-X8-SoX">
+                    <rect key="frame" x="47" y="65" width="253" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ocz-M0-qS1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFm-y4-7Mq">
+                    <rect key="frame" x="0.0" y="179" width="320" height="125"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="IFz-H6-JjF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tip_log" translatesAutoresizingMaskIntoConstraints="NO" id="Y0G-Iy-NVb">
+                    <rect key="frame" x="14" y="70" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="EFM-6c-eur"/>
+                        <constraint firstAttribute="width" constant="20" id="cye-IZ-ykg"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mr1-Rl-bvB">
+                    <rect key="frame" x="0.0" y="529" width="320" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="next:" destination="-1" eventType="touchUpInside" id="7Wn-ng-fQA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aY7-Jb-mQg">
+                    <rect key="frame" x="133" y="103" width="54" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="cJr-Ff-TWu"/>
+                        <constraint firstAttribute="width" constant="54" id="cOH-PB-p9X"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="mic_button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="voiceTips:" destination="-1" eventType="touchUpInside" id="QSB-bp-UHm"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5dk-YX-gaO">
+                    <rect key="frame" x="0.0" y="344" width="320" height="184"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hOD-cD-JVO" firstAttribute="trailing" secondItem="eFm-y4-7Mq" secondAttribute="trailing" id="2a4-gR-lBS"/>
+                <constraint firstAttribute="bottom" secondItem="mr1-Rl-bvB" secondAttribute="bottom" id="42c-NO-83L"/>
+                <constraint firstItem="czS-X8-SoX" firstAttribute="top" secondItem="e75-hG-H9f" secondAttribute="top" constant="65" id="A5k-pw-ldi"/>
+                <constraint firstItem="eFm-y4-7Mq" firstAttribute="centerX" secondItem="aY7-Jb-mQg" secondAttribute="centerX" id="EQ4-nR-xfQ"/>
+                <constraint firstItem="czS-X8-SoX" firstAttribute="leading" secondItem="Y0G-Iy-NVb" secondAttribute="trailing" constant="13" id="Ew1-st-DmJ"/>
+                <constraint firstItem="Y0G-Iy-NVb" firstAttribute="leading" secondItem="e75-hG-H9f" secondAttribute="leading" constant="14" id="HLp-an-ze9"/>
+                <constraint firstItem="czS-X8-SoX" firstAttribute="top" secondItem="Y0G-Iy-NVb" secondAttribute="top" constant="-5" id="IBh-dl-spV"/>
+                <constraint firstItem="mr1-Rl-bvB" firstAttribute="leading" secondItem="eFm-y4-7Mq" secondAttribute="leading" id="LYF-rZ-R2N"/>
+                <constraint firstAttribute="trailing" secondItem="mr1-Rl-bvB" secondAttribute="trailing" id="NW9-1W-Jii"/>
+                <constraint firstAttribute="trailing" secondItem="czS-X8-SoX" secondAttribute="trailing" constant="20" symbolic="YES" id="Ohd-M4-hla"/>
+                <constraint firstItem="5dk-YX-gaO" firstAttribute="leading" secondItem="mr1-Rl-bvB" secondAttribute="leading" id="Rd3-zP-Uok"/>
+                <constraint firstItem="aY7-Jb-mQg" firstAttribute="top" secondItem="czS-X8-SoX" secondAttribute="bottom" constant="8" id="e02-8E-xF5"/>
+                <constraint firstItem="hOD-cD-JVO" firstAttribute="top" secondItem="eFm-y4-7Mq" secondAttribute="bottom" constant="10" id="fAh-8b-u89"/>
+                <constraint firstItem="hOD-cD-JVO" firstAttribute="trailing" secondItem="5dk-YX-gaO" secondAttribute="trailing" id="l4o-li-l71"/>
+                <constraint firstItem="5dk-YX-gaO" firstAttribute="top" secondItem="hOD-cD-JVO" secondAttribute="bottom" constant="8" symbolic="YES" id="nVC-7a-GrY"/>
+                <constraint firstItem="mr1-Rl-bvB" firstAttribute="leading" secondItem="e75-hG-H9f" secondAttribute="leading" id="rYv-Yn-lfs"/>
+                <constraint firstItem="mr1-Rl-bvB" firstAttribute="trailing" secondItem="eFm-y4-7Mq" secondAttribute="trailing" id="skK-NF-UWy"/>
+                <constraint firstItem="eFm-y4-7Mq" firstAttribute="top" secondItem="aY7-Jb-mQg" secondAttribute="bottom" constant="22" id="woL-wS-Rkc"/>
+                <constraint firstItem="mr1-Rl-bvB" firstAttribute="top" secondItem="5dk-YX-gaO" secondAttribute="bottom" constant="1" id="wrD-e1-Ldi"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="add_Answers" width="94" height="22"/>
+        <image name="mic_button" width="54" height="54"/>
+        <image name="tip_log" width="16" height="16"/>
+    </resources>
+</document>

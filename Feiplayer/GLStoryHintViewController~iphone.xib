@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GLStoryHintViewController">
+            <connections>
+                <outlet property="gzButton" destination="wsn-37-rPp" id="l6U-6d-0Ks"/>
+                <outlet property="jpButton" destination="hFc-Nb-it5" id="KyN-e4-Wdd"/>
+                <outlet property="transButton" destination="lHc-eZ-S5I" id="GFf-Zs-XF8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="zhButton" destination="7R3-jj-13Z" id="xVv-uw-YCL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7R3-jj-13Z">
+                    <rect key="frame" x="17" y="64" width="50" height="69"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="MXp-Gg-sjc"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="storyhint_zh_n"/>
+                    <connections>
+                        <action selector="changeToZH:" destination="-1" eventType="touchUpInside" id="xHb-1Y-hgQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WC-ab-uSh">
+                    <rect key="frame" x="306" y="233" width="89" height="29"/>
+                    <state key="normal" backgroundImage="storyhint_spellread_n">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="spellWord:" destination="-1" eventType="touchUpInside" id="J4V-pX-5OI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewu-mg-1K4">
+                    <rect key="frame" x="404" y="188" width="45" height="45"/>
+                    <state key="normal" backgroundImage="sutbtitle_goright_button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextWord:" destination="-1" eventType="touchUpInside" id="yJb-x4-26W"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgF-wF-too">
+                    <rect key="frame" x="196" y="273" width="89" height="40"/>
+                    <state key="normal" image="storyhint_sure_n">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="chooseCutWord:" destination="-1" eventType="touchUpInside" id="BeR-Fo-MLq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHc-eZ-S5I">
+                    <rect key="frame" x="413" y="65" width="50" height="69"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="snJ-gQ-gCa"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="storyhint_translate_n">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showSpeechRecognitionView:" destination="-1" eventType="touchUpInside" id="dcQ-kr-cz0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsn-37-rPp">
+                    <rect key="frame" x="283" y="64" width="50" height="69"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="wQr-91-YFh"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="storyhint_gz_n"/>
+                    <connections>
+                        <action selector="changeToGZ:" destination="-1" eventType="touchUpInside" id="yIj-2H-i7x"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFc-Nb-it5">
+                    <rect key="frame" x="147" y="64" width="56" height="69"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="56" id="ZGB-Fr-Kg4"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="56" id="yU8-rX-bB9"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="storyhint_jp_n">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="changeToJP:" destination="-1" eventType="touchUpInside" id="tSC-mC-QLn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyt-0g-37C">
+                    <rect key="frame" x="124" y="164" width="89" height="29"/>
+                    <state key="normal" backgroundImage="storyhint_speech_n">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="speechWord:" destination="-1" eventType="touchUpInside" id="5Hz-Jj-DCy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TK-lr-CiZ">
+                    <rect key="frame" x="48" y="273" width="89" height="40"/>
+                    <state key="normal" image="storyhint_cutword_n">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cutWord:" destination="-1" eventType="touchUpInside" id="eRR-l7-6Ks"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34l-Sb-10i">
+                    <rect key="frame" x="32" y="188" width="45" height="45"/>
+                    <state key="normal" backgroundImage="sutbtitle_goleft_button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backWord:" destination="-1" eventType="touchUpInside" id="EhN-H9-iEO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5u-26-LOO">
+                    <rect key="frame" x="268" y="164" width="89" height="29"/>
+                    <state key="normal" backgroundImage="storyhint_series_n">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="series:" destination="-1" eventType="touchUpInside" id="Dih-ph-arz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nd-GU-OWM">
+                    <rect key="frame" x="344" y="273" width="89" height="40"/>
+                    <state key="normal" image="storyhint_cancel_n">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelCutWord:" destination="-1" eventType="touchUpInside" id="co1-6W-HP7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKJ-kw-VKt">
+                    <rect key="frame" x="86" y="233" width="89" height="29"/>
+                    <state key="normal" backgroundImage="storyhint_singleword_n">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="singleWord:" destination="-1" eventType="touchUpInside" id="q1w-HE-CAz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="34l-Sb-10i" secondAttribute="centerX" constant="186" id="2Yy-BG-NVy"/>
+                <constraint firstAttribute="centerX" secondItem="7R3-jj-13Z" secondAttribute="centerX" constant="198" id="36E-Ox-mUS"/>
+                <constraint firstItem="cKJ-kw-VKt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="233" id="8DK-nN-bXr"/>
+                <constraint firstItem="ewu-mg-1K4" firstAttribute="leading" secondItem="34l-Sb-10i" secondAttribute="trailing" constant="327" id="8G1-8n-cfQ"/>
+                <constraint firstItem="1TK-lr-CiZ" firstAttribute="baseline" secondItem="BgF-wF-too" secondAttribute="baseline" id="8bQ-3e-nbM"/>
+                <constraint firstAttribute="centerX" secondItem="t5u-26-LOO" secondAttribute="centerX" constant="-72.5" id="AIg-X6-mrN"/>
+                <constraint firstItem="hFc-Nb-it5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Aqv-v4-VkP"/>
+                <constraint firstItem="1TK-lr-CiZ" firstAttribute="bottom" secondItem="8Nd-GU-OWM" secondAttribute="bottom" id="B7D-g9-4ri"/>
+                <constraint firstItem="4WC-ab-uSh" firstAttribute="leading" secondItem="cKJ-kw-VKt" secondAttribute="trailing" constant="131" id="Boy-1r-1Qo"/>
+                <constraint firstAttribute="centerX" secondItem="Oyt-0g-37C" secondAttribute="centerX" constant="71.5" id="DKa-Fp-Npn"/>
+                <constraint firstAttribute="centerX" secondItem="wsn-37-rPp" secondAttribute="centerX" constant="-68" id="IB4-0Q-oZf"/>
+                <constraint firstItem="lHc-eZ-S5I" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wsn-37-rPp" secondAttribute="trailing" constant="80" id="Jkv-vY-fY1"/>
+                <constraint firstItem="t5u-26-LOO" firstAttribute="leading" secondItem="Oyt-0g-37C" secondAttribute="trailing" constant="55" id="KLD-x9-gVA"/>
+                <constraint firstItem="1TK-lr-CiZ" firstAttribute="baseline" secondItem="8Nd-GU-OWM" secondAttribute="baseline" id="NNV-HL-6PD"/>
+                <constraint firstItem="ewu-mg-1K4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="188" id="NVV-mf-eMp"/>
+                <constraint firstAttribute="bottom" secondItem="1TK-lr-CiZ" secondAttribute="bottom" constant="7" id="Nev-QD-wQd"/>
+                <constraint firstItem="BgF-wF-too" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="273" id="Qc1-c5-Ee5"/>
+                <constraint firstAttribute="centerX" secondItem="hFc-Nb-it5" secondAttribute="centerX" constant="65" id="Rz3-7h-tdK"/>
+                <constraint firstItem="hFc-Nb-it5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7R3-jj-13Z" secondAttribute="trailing" constant="80" id="UQo-dy-nsC"/>
+                <constraint firstItem="1TK-lr-CiZ" firstAttribute="top" secondItem="BgF-wF-too" secondAttribute="top" id="Ulh-Dr-Xxy"/>
+                <constraint firstItem="4WC-ab-uSh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="233" id="Was-58-nKl"/>
+                <constraint firstItem="lHc-eZ-S5I" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="Y0I-8V-vKj"/>
+                <constraint firstItem="t5u-26-LOO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="164" id="bil-7q-BLR"/>
+                <constraint firstItem="BgF-wF-too" firstAttribute="leading" secondItem="1TK-lr-CiZ" secondAttribute="trailing" constant="59" id="dW1-oY-wnk"/>
+                <constraint firstItem="1TK-lr-CiZ" firstAttribute="bottom" secondItem="BgF-wF-too" secondAttribute="bottom" id="eGz-cO-OEK"/>
+                <constraint firstItem="34l-Sb-10i" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="188" id="fJH-Uj-C7L"/>
+                <constraint firstAttribute="centerX" secondItem="4WC-ab-uSh" secondAttribute="centerX" constant="-110.5" id="g1r-V0-c1G"/>
+                <constraint firstAttribute="centerY" secondItem="7R3-jj-13Z" secondAttribute="centerY" constant="61.5" id="hwl-ZJ-JQp"/>
+                <constraint firstAttribute="centerX" secondItem="ewu-mg-1K4" secondAttribute="centerX" constant="-186" id="iWV-A2-KAU"/>
+                <constraint firstItem="8Nd-GU-OWM" firstAttribute="leading" secondItem="BgF-wF-too" secondAttribute="trailing" constant="59" id="jBu-Rh-qty"/>
+                <constraint firstItem="wsn-37-rPp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hFc-Nb-it5" secondAttribute="trailing" constant="80" id="q6A-xC-vdk"/>
+                <constraint firstItem="8Nd-GU-OWM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="273" id="qGV-1U-ogz"/>
+                <constraint firstAttribute="centerX" secondItem="cKJ-kw-VKt" secondAttribute="centerX" constant="109.5" id="sPv-w9-aIX"/>
+                <constraint firstItem="wsn-37-rPp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="sQE-Ke-jKI"/>
+                <constraint firstItem="Oyt-0g-37C" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="164" id="tGK-3i-4aW"/>
+                <constraint firstAttribute="centerX" secondItem="1TK-lr-CiZ" secondAttribute="centerX" constant="147.5" id="vBO-Ib-SyW"/>
+                <constraint firstAttribute="centerX" secondItem="lHc-eZ-S5I" secondAttribute="centerX" constant="-198" id="was-eW-NzA"/>
+                <constraint firstItem="7R3-jj-13Z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="ymB-iP-kyk"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="storyhint_cancel_n" width="89" height="29"/>
+        <image name="storyhint_cutword_n" width="89" height="29"/>
+        <image name="storyhint_gz_n" width="50" height="69"/>
+        <image name="storyhint_jp_n" width="56" height="69"/>
+        <image name="storyhint_series_n" width="89" height="29"/>
+        <image name="storyhint_singleword_n" width="89" height="29"/>
+        <image name="storyhint_speech_n" width="89" height="29"/>
+        <image name="storyhint_spellread_n" width="89" height="29"/>
+        <image name="storyhint_sure_n" width="89" height="29"/>
+        <image name="storyhint_translate_n" width="50" height="69"/>
+        <image name="storyhint_zh_n" width="50" height="69"/>
+        <image name="sutbtitle_goleft_button" width="45" height="45"/>
+        <image name="sutbtitle_goright_button" width="45" height="45"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ECDictationViewController">
+            <connections>
+                <outlet property="firstExamTextField" destination="UEM-oQ-MJ6" id="BwJ-pj-hBq"/>
+                <outlet property="secondExamTextField" destination="a2M-2b-dbq" id="V01-aU-8vS"/>
+                <outlet property="tipsLabel" destination="mqG-ke-Q36" id="Mu5-2h-SJ7"/>
+                <outlet property="view" destination="fSt-YD-Ycn" id="leY-AN-FTb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fSt-YD-Ycn">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyy-F0-umZ">
+                    <rect key="frame" x="0.0" y="529" width="320" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="next:" destination="-1" eventType="touchUpInside" id="sVE-hU-5J1"/>
+                    </connections>
+                </button>
+                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hr5-nh-EPg">
+                    <rect key="frame" x="13" y="128" width="35" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="1OZ-xL-ZKZ"/>
+                        <constraint firstAttribute="height" constant="35" id="Izf-R3-koL"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="mic_button">
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="firsExamVoice:" destination="-1" eventType="touchUpInside" id="rL8-6j-FCR"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tip_log" translatesAutoresizingMaskIntoConstraints="NO" id="qmR-Ld-2zA">
+                    <rect key="frame" x="14" y="69" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Fa3-RU-z5Q"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qE-Wr-aCe">
+                    <rect key="frame" x="56" y="128" width="35" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="IrL-c4-kJe"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="tip_button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="firstExamText:" destination="-1" eventType="touchUpInside" id="Dbd-fR-JcL"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请点击喇叭,将听到的句子填写到文本框中" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="895-ES-fEJ">
+                    <rect key="frame" x="47" y="69" width="229" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="将听到的句子填入此处" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UEM-oQ-MJ6">
+                    <rect key="frame" x="1" y="171" width="320" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="done"/>
+                </textField>
+                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBr-lN-Rtv">
+                    <rect key="frame" x="13" y="209" width="35" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="iBX-tM-hoV"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="mic_button">
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="secondExamVoice:" destination="-1" eventType="touchUpInside" id="4OU-eS-9g1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJ0-2b-9Ze">
+                    <rect key="frame" x="56" y="209" width="35" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="tip_button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="secondExamText:" destination="-1" eventType="touchUpInside" id="faa-LJ-9PV"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="将听到的句子填入此处" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a2M-2b-dbq">
+                    <rect key="frame" x="1" y="257" width="320" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="done"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqG-ke-Q36">
+                    <rect key="frame" x="1" y="309" width="320" height="217"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="a2M-2b-dbq" firstAttribute="trailing" secondItem="mqG-ke-Q36" secondAttribute="trailing" id="CUZ-4R-TDf"/>
+                <constraint firstItem="2qE-Wr-aCe" firstAttribute="leading" secondItem="Hr5-nh-EPg" secondAttribute="trailing" constant="8" symbolic="YES" id="DBZ-LK-m9U"/>
+                <constraint firstAttribute="trailing" secondItem="oyy-F0-umZ" secondAttribute="trailing" id="DCe-5a-R4b"/>
+                <constraint firstItem="UEM-oQ-MJ6" firstAttribute="top" secondItem="Hr5-nh-EPg" secondAttribute="bottom" constant="8" symbolic="YES" id="Dge-sF-Ex3"/>
+                <constraint firstItem="oBr-lN-Rtv" firstAttribute="top" secondItem="UEM-oQ-MJ6" secondAttribute="bottom" constant="8" symbolic="YES" id="E6R-2g-4wQ"/>
+                <constraint firstItem="2qE-Wr-aCe" firstAttribute="top" secondItem="895-ES-fEJ" secondAttribute="bottom" constant="38" id="Gt7-l7-RqX"/>
+                <constraint firstItem="mqG-ke-Q36" firstAttribute="top" secondItem="a2M-2b-dbq" secondAttribute="bottom" constant="22" id="Irr-fr-LfO"/>
+                <constraint firstItem="mqG-ke-Q36" firstAttribute="leading" secondItem="a2M-2b-dbq" secondAttribute="leading" id="Km4-Yu-Y6Q"/>
+                <constraint firstItem="UEM-oQ-MJ6" firstAttribute="top" secondItem="2qE-Wr-aCe" secondAttribute="bottom" constant="8" symbolic="YES" id="L1W-AA-USk"/>
+                <constraint firstItem="Hr5-nh-EPg" firstAttribute="leading" secondItem="fSt-YD-Ycn" secondAttribute="leading" constant="13" id="NJz-hB-572"/>
+                <constraint firstItem="Hr5-nh-EPg" firstAttribute="baseline" secondItem="2qE-Wr-aCe" secondAttribute="baseline" id="RDm-if-wa3"/>
+                <constraint firstItem="Hr5-nh-EPg" firstAttribute="top" secondItem="2qE-Wr-aCe" secondAttribute="top" id="Suh-wX-rNJ"/>
+                <constraint firstItem="oyy-F0-umZ" firstAttribute="leading" secondItem="fSt-YD-Ycn" secondAttribute="leading" id="VPw-kT-Hg1"/>
+                <constraint firstAttribute="bottom" secondItem="oyy-F0-umZ" secondAttribute="bottom" id="Vhr-fW-8BJ"/>
+                <constraint firstItem="895-ES-fEJ" firstAttribute="centerY" secondItem="qmR-Ld-2zA" secondAttribute="centerY" id="Vzd-1u-H2h"/>
+                <constraint firstAttribute="trailing" secondItem="895-ES-fEJ" secondAttribute="trailing" constant="44" id="WUc-Wb-hfz"/>
+                <constraint firstItem="a2M-2b-dbq" firstAttribute="trailing" secondItem="UEM-oQ-MJ6" secondAttribute="trailing" id="XQ4-ed-DgY"/>
+                <constraint firstItem="yJ0-2b-9Ze" firstAttribute="trailing" secondItem="2qE-Wr-aCe" secondAttribute="trailing" id="Zvb-ib-nmy"/>
+                <constraint firstItem="oBr-lN-Rtv" firstAttribute="baseline" secondItem="yJ0-2b-9Ze" secondAttribute="baseline" id="aPc-T0-fHk"/>
+                <constraint firstItem="895-ES-fEJ" firstAttribute="top" secondItem="qmR-Ld-2zA" secondAttribute="top" id="f50-jT-boV"/>
+                <constraint firstItem="Hr5-nh-EPg" firstAttribute="leading" secondItem="oBr-lN-Rtv" secondAttribute="leading" id="fUO-cf-eYr"/>
+                <constraint firstItem="895-ES-fEJ" firstAttribute="centerX" secondItem="UEM-oQ-MJ6" secondAttribute="centerX" id="i0Y-XF-mXA"/>
+                <constraint firstItem="a2M-2b-dbq" firstAttribute="top" secondItem="oBr-lN-Rtv" secondAttribute="bottom" constant="13" id="jsv-Hi-ogG"/>
+                <constraint firstItem="yJ0-2b-9Ze" firstAttribute="leading" secondItem="2qE-Wr-aCe" secondAttribute="leading" id="k5Y-Sp-14I"/>
+                <constraint firstItem="895-ES-fEJ" firstAttribute="leading" secondItem="qmR-Ld-2zA" secondAttribute="trailing" constant="13" id="mqY-Q2-BpN"/>
+                <constraint firstItem="UEM-oQ-MJ6" firstAttribute="leading" secondItem="fSt-YD-Ycn" secondAttribute="leading" constant="1" id="o6T-pd-Sw9"/>
+                <constraint firstItem="oyy-F0-umZ" firstAttribute="top" secondItem="mqG-ke-Q36" secondAttribute="bottom" constant="3" id="qCz-aS-0le"/>
+                <constraint firstItem="yJ0-2b-9Ze" firstAttribute="leading" secondItem="oBr-lN-Rtv" secondAttribute="trailing" constant="8" symbolic="YES" id="qJx-Yz-zsu"/>
+                <constraint firstAttribute="trailing" secondItem="UEM-oQ-MJ6" secondAttribute="trailing" constant="-1" id="sgD-Jg-DcN"/>
+                <constraint firstItem="a2M-2b-dbq" firstAttribute="leading" secondItem="UEM-oQ-MJ6" secondAttribute="leading" id="tJw-L2-ACF"/>
+                <constraint firstItem="qmR-Ld-2zA" firstAttribute="top" secondItem="fSt-YD-Ycn" secondAttribute="top" constant="69" id="uNw-Le-vdj"/>
+                <constraint firstItem="qmR-Ld-2zA" firstAttribute="leading" secondItem="fSt-YD-Ycn" secondAttribute="leading" constant="14" id="vtd-W3-BYB"/>
+                <constraint firstItem="yJ0-2b-9Ze" firstAttribute="top" secondItem="UEM-oQ-MJ6" secondAttribute="bottom" constant="8" symbolic="YES" id="w9k-y4-BAN"/>
+                <constraint firstItem="yJ0-2b-9Ze" firstAttribute="bottom" secondItem="oBr-lN-Rtv" secondAttribute="bottom" id="xo8-HR-Nco"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="mic_button" width="54" height="54"/>
+        <image name="tip_button" width="54" height="54"/>
+        <image name="tip_log" width="16" height="16"/>
+    </resources>
+</document>

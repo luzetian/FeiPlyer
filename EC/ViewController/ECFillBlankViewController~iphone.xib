@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ECFillBlankViewController">
+            <connections>
+                <outlet property="tableView" destination="v5m-fG-WZr" id="iIY-Cx-kTR"/>
+                <outlet property="testTextView" destination="vKv-9l-yNb" id="j9f-Fq-McE"/>
+                <outlet property="view" destination="ctH-8X-Q7H" id="4ro-LT-URg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ctH-8X-Q7H">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请认真收听音频中的新闻信息,结合下文进行填空" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQ0-EM-KuG">
+                    <rect key="frame" x="48" y="69" width="228" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDR-a4-hgG">
+                    <rect key="frame" x="0.0" y="529" width="320" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="next:" destination="-1" eventType="touchUpInside" id="Hff-8T-dN6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmQ-1z-h6g">
+                    <rect key="frame" x="133" y="98" width="54" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="mic_button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="voiceTips:" destination="-1" eventType="touchUpInside" id="lET-iF-WeX"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="v5m-fG-WZr">
+                    <rect key="frame" x="0.0" y="340" width="322" height="194"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tip_log" translatesAutoresizingMaskIntoConstraints="NO" id="7Hm-rH-cUm">
+                    <rect key="frame" x="14" y="70" width="21" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="21" id="1qM-5R-DSe"/>
+                        <constraint firstAttribute="height" constant="20" id="KlJ-qB-AEc"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKv-9l-yNb">
+                    <rect key="frame" x="1" y="156" width="320" height="181"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="181" id="sYU-si-az1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HmQ-1z-h6g" firstAttribute="centerX" secondItem="dDR-a4-hgG" secondAttribute="centerX" id="2AQ-PW-vYe"/>
+                <constraint firstAttribute="trailing" secondItem="pQ0-EM-KuG" secondAttribute="trailing" constant="44" id="7AX-yF-YVC"/>
+                <constraint firstItem="v5m-fG-WZr" firstAttribute="top" secondItem="vKv-9l-yNb" secondAttribute="bottom" constant="3" id="EBK-Lu-eFW"/>
+                <constraint firstItem="HmQ-1z-h6g" firstAttribute="top" secondItem="pQ0-EM-KuG" secondAttribute="bottom" constant="8" symbolic="YES" id="Hx2-ER-Pzg"/>
+                <constraint firstItem="pQ0-EM-KuG" firstAttribute="leading" secondItem="7Hm-rH-cUm" secondAttribute="trailing" constant="13" id="J4t-O4-bCR"/>
+                <constraint firstAttribute="bottom" secondItem="v5m-fG-WZr" secondAttribute="bottom" constant="34" id="L8w-4I-Upp"/>
+                <constraint firstItem="pQ0-EM-KuG" firstAttribute="bottom" secondItem="7Hm-rH-cUm" secondAttribute="bottom" id="MOT-c3-HCE"/>
+                <constraint firstItem="7Hm-rH-cUm" firstAttribute="top" secondItem="ctH-8X-Q7H" secondAttribute="top" constant="70" id="MsA-oy-6la"/>
+                <constraint firstItem="dDR-a4-hgG" firstAttribute="leading" secondItem="ctH-8X-Q7H" secondAttribute="leading" id="QU4-jT-XPT"/>
+                <constraint firstItem="v5m-fG-WZr" firstAttribute="leading" secondItem="dDR-a4-hgG" secondAttribute="leading" id="SBz-hF-eTf"/>
+                <constraint firstAttribute="trailing" secondItem="dDR-a4-hgG" secondAttribute="trailing" id="U5v-NV-Keo"/>
+                <constraint firstAttribute="trailing" secondItem="vKv-9l-yNb" secondAttribute="trailing" constant="-1" id="Wbc-mT-WTp"/>
+                <constraint firstItem="vKv-9l-yNb" firstAttribute="top" secondItem="7Hm-rH-cUm" secondAttribute="bottom" constant="66" id="jqn-kb-ed1"/>
+                <constraint firstItem="v5m-fG-WZr" firstAttribute="centerX" secondItem="vKv-9l-yNb" secondAttribute="centerX" id="lgs-89-M15"/>
+                <constraint firstItem="7Hm-rH-cUm" firstAttribute="leading" secondItem="ctH-8X-Q7H" secondAttribute="leading" constant="14" id="mgm-lH-BVQ"/>
+                <constraint firstAttribute="bottom" secondItem="dDR-a4-hgG" secondAttribute="bottom" id="nH7-va-fgy"/>
+                <constraint firstItem="vKv-9l-yNb" firstAttribute="leading" secondItem="ctH-8X-Q7H" secondAttribute="leading" constant="1" id="pYZ-4h-VS8"/>
+                <constraint firstItem="pQ0-EM-KuG" firstAttribute="top" secondItem="ctH-8X-Q7H" secondAttribute="top" constant="69" id="qJt-oB-xBx"/>
+                <constraint firstItem="vKv-9l-yNb" firstAttribute="top" secondItem="HmQ-1z-h6g" secondAttribute="bottom" constant="12" id="xPf-T3-Qf9"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="mic_button" width="54" height="54"/>
+        <image name="tip_log" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GLSpeechRecognitionViewController">
+            <connections>
+                <outlet property="phonetic" destination="N2G-dI-wlJ" id="RxX-EL-arJ"/>
+                <outlet property="showTranslateResult" destination="Hy0-v1-WOk" id="XzC-wP-LVT"/>
+                <outlet property="textField" destination="TwF-ge-6PM" id="Oc0-3F-nbQ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ARl-PZ-LU9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMi-rI-aEx">
+                    <rect key="frame" x="48" y="52" width="89" height="29"/>
+                    <state key="normal" backgroundImage="SpeechRecognition_speech_button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="speech" destination="-1" eventType="touchUpInside" id="fHj-mC-Mfm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B99-di-CNw">
+                    <rect key="frame" x="485" y="89" width="45" height="45"/>
+                    <state key="normal" backgroundImage="sutbtitle_goright_button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextWord:" destination="-1" eventType="touchUpInside" id="MGM-bi-LxA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjy-rB-iPJ">
+                    <rect key="frame" x="239" y="52" width="89" height="29"/>
+                    <state key="normal" backgroundImage="SpeechRecognition_series_button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="seriesSpeech:" destination="-1" eventType="touchUpInside" id="6yh-MF-Isd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnH-jX-O9K">
+                    <rect key="frame" x="339" y="97" width="89" height="29"/>
+                    <state key="normal" backgroundImage="SpeechRecognition_spellread_button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="spellRead:" destination="-1" eventType="touchUpInside" id="awa-gp-K1c"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3K1-Xo-Ror">
+                    <rect key="frame" x="430" y="52" width="107" height="29"/>
+                    <state key="normal" backgroundImage="SpeechRecognition_speepchCurrentSubtitle_button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="speechCurrentSubtilte:" destination="-1" eventType="touchUpInside" id="qvq-wd-SLX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSp-HC-HCY">
+                    <rect key="frame" x="390" y="271" width="89" height="29"/>
+                    <state key="normal" backgroundImage="SpeechRecognition_readwrite_button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="readOrWrite:" destination="-1" eventType="touchUpInside" id="ZYU-cK-Baa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBp-OR-k48">
+                    <rect key="frame" x="57" y="89" width="45" height="45"/>
+                    <state key="normal" backgroundImage="sutbtitle_goleft_button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backWord:" destination="-1" eventType="touchUpInside" id="eEm-Wh-jCK"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发音:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cP2-Xg-uHy">
+                    <rect key="frame" x="29" y="149" width="39" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="39" id="QOb-uK-grw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="翻译:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9l-7A-hmh">
+                    <rect key="frame" x="29" y="184" width="39" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="39" id="gUv-hO-sDq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2G-dI-wlJ">
+                    <rect key="frame" x="80" y="149" width="408" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="eHk-hc-feG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hy0-v1-WOk">
+                    <rect key="frame" x="80" y="184" width="408" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAo-uc-mWt">
+                    <rect key="frame" x="89" y="271" width="89" height="29"/>
+                    <state key="normal" backgroundImage="SpeechRecognition_pressSpeech_button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="beginRecorder:" destination="-1" eventType="touchUpInside" id="cWm-gc-l1w"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chF-En-79o">
+                    <rect key="frame" x="240" y="271" width="89" height="29"/>
+                    <state key="normal" backgroundImage="SpeechRecognition_translate_button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="translator:" destination="-1" eventType="touchUpInside" id="Nlu-aE-yBt"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入和说出您选中的文字" minimumFontSize="17" background="textField_background" translatesAutoresizingMaskIntoConstraints="NO" id="TwF-ge-6PM">
+                    <rect key="frame" x="29" y="224" width="519" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <action selector="done:" destination="-1" eventType="editingDidEndOnExit" id="Pjj-fN-Qir"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhr-Bg-Jrn">
+                    <rect key="frame" x="144" y="97" width="100" height="29"/>
+                    <state key="normal" backgroundImage="SpeechRecognition_singleword_button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="singleWord:" destination="-1" eventType="touchUpInside" id="bFn-rF-bHt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="z9l-7A-hmh" firstAttribute="top" secondItem="cP2-Xg-uHy" secondAttribute="bottom" constant="14" id="3TU-ge-yxo"/>
+                <constraint firstItem="Vhr-Bg-Jrn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="144" id="47K-5D-3UU"/>
+                <constraint firstItem="Cjy-rB-iPJ" firstAttribute="leading" secondItem="hMi-rI-aEx" secondAttribute="trailing" constant="102" id="7Tk-qT-C8v"/>
+                <constraint firstItem="N2G-dI-wlJ" firstAttribute="height" secondItem="Hy0-v1-WOk" secondAttribute="height" id="7aT-Zp-5Hw"/>
+                <constraint firstItem="3K1-Xo-Ror" firstAttribute="trailing" secondItem="B99-di-CNw" secondAttribute="trailing" constant="7" id="8s7-cq-KRJ"/>
+                <constraint firstItem="wAo-uc-mWt" firstAttribute="top" secondItem="TwF-ge-6PM" secondAttribute="bottom" constant="17" id="8xB-Ha-Wp6"/>
+                <constraint firstAttribute="centerX" secondItem="hMi-rI-aEx" secondAttribute="centerX" constant="191.5" id="AK3-fj-kGe"/>
+                <constraint firstItem="3K1-Xo-Ror" firstAttribute="leading" secondItem="Cjy-rB-iPJ" secondAttribute="trailing" constant="102" id="AS2-Wk-tYP"/>
+                <constraint firstAttribute="bottom" secondItem="wAo-uc-mWt" secondAttribute="bottom" constant="20" id="B20-m7-W4s"/>
+                <constraint firstItem="Vhr-Bg-Jrn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="97" id="CO4-IC-Pqv"/>
+                <constraint firstAttribute="centerY" secondItem="TwF-ge-6PM" secondAttribute="centerY" constant="-79" id="FGu-t8-Kse"/>
+                <constraint firstItem="cP2-Xg-uHy" firstAttribute="baseline" secondItem="N2G-dI-wlJ" secondAttribute="baseline" id="FpK-dh-aE3"/>
+                <constraint firstItem="cP2-Xg-uHy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="29" id="G7z-gV-7cA"/>
+                <constraint firstItem="LnH-jX-O9K" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="97" id="Gbs-eU-4mZ"/>
+                <constraint firstItem="N2G-dI-wlJ" firstAttribute="leading" secondItem="cP2-Xg-uHy" secondAttribute="trailing" constant="12" id="Iig-d7-8g8"/>
+                <constraint firstItem="B99-di-CNw" firstAttribute="top" secondItem="3K1-Xo-Ror" secondAttribute="bottom" constant="8" id="IlT-yf-p8B"/>
+                <constraint firstItem="chF-En-79o" firstAttribute="top" secondItem="TwF-ge-6PM" secondAttribute="bottom" constant="17" id="JT1-i9-0t4"/>
+                <constraint firstAttribute="centerX" secondItem="chF-En-79o" secondAttribute="centerX" constant="-0.5" id="LiC-E4-uY6"/>
+                <constraint firstItem="MSp-HC-HCY" firstAttribute="leading" secondItem="chF-En-79o" secondAttribute="trailing" constant="61" id="N2L-8k-HaT"/>
+                <constraint firstAttribute="centerX" secondItem="MSp-HC-HCY" secondAttribute="centerX" constant="-150.5" id="OUe-Sj-9Pe"/>
+                <constraint firstItem="MSp-HC-HCY" firstAttribute="top" secondItem="TwF-ge-6PM" secondAttribute="bottom" constant="17" id="QUP-LQ-Qkh"/>
+                <constraint firstItem="z9l-7A-hmh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="29" id="UZa-s7-KGx"/>
+                <constraint firstAttribute="bottom" secondItem="chF-En-79o" secondAttribute="bottom" constant="20" id="XS3-j8-KE9"/>
+                <constraint firstItem="eBp-OR-k48" firstAttribute="top" secondItem="hMi-rI-aEx" secondAttribute="bottom" constant="8" id="YZf-Wc-WUG"/>
+                <constraint firstAttribute="centerY" secondItem="3K1-Xo-Ror" secondAttribute="centerY" constant="93.5" id="apc-0h-pbh"/>
+                <constraint firstItem="MSp-HC-HCY" firstAttribute="top" secondItem="Hy0-v1-WOk" secondAttribute="bottom" constant="66" id="dMZ-ta-cVe"/>
+                <constraint firstAttribute="centerX" secondItem="Hy0-v1-WOk" secondAttribute="centerX" id="eLO-t3-Zjz"/>
+                <constraint firstAttribute="trailing" secondItem="LnH-jX-O9K" secondAttribute="trailing" constant="140" id="gma-Xh-008"/>
+                <constraint firstItem="Hy0-v1-WOk" firstAttribute="leading" secondItem="z9l-7A-hmh" secondAttribute="trailing" constant="12" id="ibF-6o-zDj"/>
+                <constraint firstItem="hMi-rI-aEx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="52" id="lIC-JL-0AA"/>
+                <constraint firstItem="chF-En-79o" firstAttribute="leading" secondItem="wAo-uc-mWt" secondAttribute="trailing" constant="62" id="lag-WP-wdH"/>
+                <constraint firstAttribute="trailing" secondItem="TwF-ge-6PM" secondAttribute="trailing" constant="20" id="pEo-tr-cQB"/>
+                <constraint firstItem="Cjy-rB-iPJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="52" id="pqS-vl-55J"/>
+                <constraint firstItem="Hy0-v1-WOk" firstAttribute="top" secondItem="N2G-dI-wlJ" secondAttribute="bottom" constant="14" id="q44-E5-1mI"/>
+                <constraint firstItem="TwF-ge-6PM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="29" id="r64-9g-1Gi"/>
+                <constraint firstItem="3K1-Xo-Ror" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="52" id="raS-2f-hpx"/>
+                <constraint firstAttribute="centerX" secondItem="N2G-dI-wlJ" secondAttribute="centerX" id="ubX-B6-Opx"/>
+                <constraint firstAttribute="bottom" secondItem="MSp-HC-HCY" secondAttribute="bottom" constant="20" id="ymL-pA-LMF"/>
+                <constraint firstAttribute="centerX" secondItem="wAo-uc-mWt" secondAttribute="centerX" constant="150.5" id="ywc-ML-Whm"/>
+                <constraint firstItem="hMi-rI-aEx" firstAttribute="leading" secondItem="eBp-OR-k48" secondAttribute="leading" constant="-9" id="z1l-SJ-Svq"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SpeechRecognition_pressSpeech_button" width="89" height="29"/>
+        <image name="SpeechRecognition_readwrite_button" width="100" height="29"/>
+        <image name="SpeechRecognition_series_button" width="89" height="29"/>
+        <image name="SpeechRecognition_singleword_button" width="100" height="29"/>
+        <image name="SpeechRecognition_speech_button" width="89" height="29"/>
+        <image name="SpeechRecognition_speepchCurrentSubtitle_button" width="107" height="29"/>
+        <image name="SpeechRecognition_spellread_button" width="89" height="29"/>
+        <image name="SpeechRecognition_translate_button" width="89" height="29"/>
+        <image name="sutbtitle_goleft_button" width="45" height="45"/>
+        <image name="sutbtitle_goright_button" width="45" height="45"/>
+        <image name="textField_background" width="495" height="40"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
